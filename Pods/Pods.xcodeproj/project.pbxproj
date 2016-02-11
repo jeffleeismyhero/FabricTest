@@ -13,9 +13,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C073BB2FC315075B9DE90C24FE2C52B /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = iOS/Crashlytics.framework; sourceTree = "<group>"; };
 		2BCC458FDD5F692BBB2BFC64BB5701FC /* Pods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-umbrella.h"; sourceTree = "<group>"; };
 		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6AA2675E2DAE14816803F80DAE5CCD4B /* Answers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Answers.framework; sourceTree = "<group>"; };
 		79A9DEDC89FE8336BF5FEDAAF75BF7FC /* Pods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Pods.modulemap; sourceTree = "<group>"; };
 		87B213035BAC5F75386F62D3C75D2342 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
 		894E5DA93A9F359521A89826BE6DA777 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
@@ -23,10 +23,9 @@
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BB5D32B5D8FFDA27126FB97ADA2F84CF /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBC0F7C552B739C909B650A0F42F7F38 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
-		D00463F878745FBB101D61851669B724 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = iOS/Crashlytics.framework; sourceTree = "<group>"; };
 		D0405803033A2A777B8E4DFA0C1800ED /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
 		DA312349A49333542E6F4B36B329960E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
-		DF6073D4FFF8182884656A1A1D9DF15C /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = iOS/Fabric.framework; sourceTree = "<group>"; };
+		E1B6F2CE97837747A137B7F9EC710EF8 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = iOS/Fabric.framework; sourceTree = "<group>"; };
 		E7F21354943D9F42A70697D5A5EF72E9 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
 		E8446514FBAD26C0E18F24A5715AEF67 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -43,20 +42,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0B2952DD27EED9A6209A03B39D9F94ED /* Frameworks */ = {
+		0FBADD4C4C312933525779355B4A728B /* Crashlytics */ = {
 			isa = PBXGroup;
 			children = (
-				DF6073D4FFF8182884656A1A1D9DF15C /* Fabric.framework */,
+				5AF2ED3E1B1DF375ACFB148B356F91A5 /* Frameworks */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		16807921E1E469E94A770537ECD7A548 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D00463F878745FBB101D61851669B724 /* Crashlytics.framework */,
-			);
-			name = Frameworks;
+			path = Crashlytics;
 			sourceTree = "<group>";
 		};
 		1F65C4CD40C947C4415F8D28536735CC /* Products */ = {
@@ -67,30 +58,29 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2AC000DDB9DD752D8CD2990ECD43C11C /* Answers */ = {
+		23F124B36981587A4F2E341B8AEC8517 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B418C72D3E85513AE614129A38A5938D /* Frameworks */,
+				E1B6F2CE97837747A137B7F9EC710EF8 /* Fabric.framework */,
 			);
-			path = Answers;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3DB2AD0F491CA156AF7225DB5C0BE363 /* Crashlytics */ = {
+		4C01CE7C97A1F4AA2AA6283DCBF4679A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				16807921E1E469E94A770537ECD7A548 /* Frameworks */,
-			);
-			path = Crashlytics;
-			sourceTree = "<group>";
-		};
-		4ABBEAE3045467BE9CF940C0E36D5EDD /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				2AC000DDB9DD752D8CD2990ECD43C11C /* Answers */,
-				3DB2AD0F491CA156AF7225DB5C0BE363 /* Crashlytics */,
-				FE4EC58121EE6DB48A94D9EA3431BC7A /* Fabric */,
+				0FBADD4C4C312933525779355B4A728B /* Crashlytics */,
+				BD8B321ABCC17A2AA08C4077E26ECA81 /* Fabric */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		5AF2ED3E1B1DF375ACFB148B356F91A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C073BB2FC315075B9DE90C24FE2C52B /* Crashlytics.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		75D98FF52E597A11900E131B6C4E1ADA /* Pods */ = {
@@ -116,18 +106,10 @@
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				4ABBEAE3045467BE9CF940C0E36D5EDD /* Pods */,
+				4C01CE7C97A1F4AA2AA6283DCBF4679A /* Pods */,
 				1F65C4CD40C947C4415F8D28536735CC /* Products */,
 				B7B80995527643776607AFFA75B91E24 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		B418C72D3E85513AE614129A38A5938D /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				6AA2675E2DAE14816803F80DAE5CCD4B /* Answers.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		B7B80995527643776607AFFA75B91E24 /* Targets Support Files */ = {
@@ -146,20 +128,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BD8B321ABCC17A2AA08C4077E26ECA81 /* Fabric */ = {
+			isa = PBXGroup;
+			children = (
+				23F124B36981587A4F2E341B8AEC8517 /* Frameworks */,
+			);
+			path = Fabric;
+			sourceTree = "<group>";
+		};
 		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		FE4EC58121EE6DB48A94D9EA3431BC7A /* Fabric */ = {
-			isa = PBXGroup;
-			children = (
-				0B2952DD27EED9A6209A03B39D9F94ED /* Frameworks */,
-			);
-			path = Fabric;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

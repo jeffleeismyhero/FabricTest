@@ -10,6 +10,9 @@
 #import "DetailViewController.h"
 #import "MasterViewController.h"
 
+#import <Fabric/Fabric.h>
+#import <Crashlytics/Crashlytics.h>
+
 @interface AppDelegate () <UISplitViewControllerDelegate>
 
 @end
@@ -27,6 +30,9 @@
     UINavigationController *masterNavigationController = splitViewController.viewControllers[0];
     MasterViewController *controller = (MasterViewController *)masterNavigationController.topViewController;
     controller.managedObjectContext = self.managedObjectContext;
+    
+    [Answers logCustomEventWithName:@"ApplicationLaunch" customAttributes:@{}];
+    
     return YES;
 }
 

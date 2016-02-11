@@ -5,7 +5,7 @@ use_frameworks!
 
 pod 'Fabric'
 pod 'Crashlytics'
-pod 'Answers'
+#pod 'Answers'
 
 post_install do |installer|
   installer.pods_project.targets.each do |target|
